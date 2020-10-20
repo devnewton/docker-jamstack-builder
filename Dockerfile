@@ -1,7 +1,7 @@
 FROM adoptopenjdk/maven-openjdk11
 
 RUN apt-get update \
-    && apt-get install -y curl vim git-core \
+    && apt-get install -y curl vim git-core jq \
     && apt-get -y autoclean
 
 RUN mkdir -p /opt/node
